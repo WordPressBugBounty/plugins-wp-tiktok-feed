@@ -60,7 +60,6 @@ class Accounts {
 		}
 
 		return $entity->getProperties();
-
 	}
 
 	public function delete( string $open_id ) {

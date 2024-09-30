@@ -74,10 +74,10 @@ final class Plugin {
 			</p>
 			<ol>
 				<li>
-					<?php echo sprintf( esc_html__( 'Go to TikTok Feed %s page and delete the previously mentioned accounts.', 'wp-tiktok-feed' ), $accounts_link ); ?>
+					<?php printf( esc_html__( 'Go to TikTok Feed %s page and delete the previously mentioned accounts.', 'wp-tiktok-feed' ), $accounts_link ); ?>
 				</li>
 				<li>
-					<?php echo sprintf( esc_html__( 'Go to TikTok Feed %s page and click on "Edit" to the corresponding feeds, then select in Account field the new correct account and save it.', 'wp-tiktok-feed' ), $feeds_link ); ?>
+					<?php printf( esc_html__( 'Go to TikTok Feed %s page and click on "Edit" to the corresponding feeds, then select in Account field the new correct account and save it.', 'wp-tiktok-feed' ), $feeds_link ); ?>
 				</li>
 			</ol>
 		</div>
@@ -90,7 +90,6 @@ final class Plugin {
 		}
 		return self::$instance;
 	}
-
 }
 
 Plugin::instance();

@@ -1,9 +1,9 @@
 <?php
 namespace QuadLayers\TTF\Api\Rest\Endpoints\Backend\Feeds;
 
-use QuadLayers\TTF\Api\Rest\Endpoints\Base as Base;
+use QuadLayers\TTF\Api\Rest\Endpoints\Base;
 use QuadLayers\TTF\Models\Feeds as Models_Feed;
-use QuadLayers\TTF\Utils\Cache as Cache;
+use QuadLayers\TTF\Utils\Cache;
 
 /**
  * API_Rest_Feeds_Clear_Cache Class

@@ -1,7 +1,7 @@
 <?php
 namespace QuadLayers\TTF\Api\Rest\Endpoints\Frontend\Hashtag_Video_List;
 
-use QuadLayers\TTF\Api\Rest\Endpoints\Base as Base;
+use QuadLayers\TTF\Api\Rest\Endpoints\Base;
 
 /**
  * API_Rest_Frontend_Hashtag_Video_List Class

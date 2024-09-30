@@ -1,7 +1,7 @@
 <?php
 namespace QuadLayers\TTF\Api\Rest\Endpoints\Frontend\User_Profile;
 
-use QuadLayers\TTF\Api\Rest\Endpoints\Base as Base;
+use QuadLayers\TTF\Api\Rest\Endpoints\Base;
 use QuadLayers\TTF\Models\Accounts as Models_Account;
 use QuadLayers\TTF\Api\Fetch\User_Profile\Get as API_Fetch_User_Profile;
 use QuadLayers\TTF\Utils\Cache;

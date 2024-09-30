@@ -2,8 +2,8 @@
 namespace QuadLayers\TTF\Api\Rest\Endpoints\Backend\Feeds;
 
 use QuadLayers\TTF\Models\Feeds as Models_Feed;
-use QuadLayers\TTF\Api\Rest\Endpoints\Base as Base;
-use QuadLayers\TTF\Utils\Cache as Cache;
+use QuadLayers\TTF\Api\Rest\Endpoints\Base;
+use QuadLayers\TTF\Utils\Cache;
 
 /**
  * API_Rest_Feeds_Delete Class
@@ -68,7 +68,7 @@ class Delete extends Base {
 		return array(
 			'feed_settings' => array(
 				'required'          => true,
-				'validate_callback' => function( $param ) {
+				'validate_callback' => function ( $param ) {
 					return is_array( json_decode( wp_json_encode( $param ), true ) );
 				},
 			),
@@ -85,5 +85,4 @@ class Delete extends Base {
 		}
 		return true;
 	}
-
 }

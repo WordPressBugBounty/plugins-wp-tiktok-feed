@@ -2,7 +2,7 @@
 
 namespace QuadLayers\TTF\Controllers;
 
-use QuadLayers\TTF\Utils\Helpers as Helpers;
+use QuadLayers\TTF\Utils\Helpers;
 use QuadLayers\TTF\Models\Accounts as Models_Account;
 use QuadLayers\TTF\Models\Feeds as Models_Feed;
 use QuadLayers\TTF\Api\Rest\Endpoints\Frontend\User_Profile\Load as API_Rest_User_Profile;
@@ -84,7 +84,6 @@ class Admin {
 			"{$menu_slug}&tab=premium",
 			'__return_null'
 		);
-
 	}
 
 
@@ -191,7 +190,6 @@ class Admin {
 				),
 			)
 		);
-
 	}
 
 	public static function init_add_account() {
@@ -207,7 +205,7 @@ class Admin {
 			$models_account = new Models_Account();
 
 			$sanitized_response = array_map(
-				function( $value ) {
+				function ( $value ) {
 					return sanitize_text_field( base64_decode( $value ) );
 				},
 				$_REQUEST['accounts'][0]
@@ -241,7 +239,6 @@ class Admin {
 				exit;
 			}
 		}
-
 	}
 
 	public static function add_premium_css() {

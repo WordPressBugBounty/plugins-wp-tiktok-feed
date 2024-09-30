@@ -44,7 +44,6 @@ abstract class Base implements Route_Interface {
 		$rest_route     = self::get_rest_route();
 
 		return "{$rest_namespace}/{$rest_route}";
-
 	}
 
 	public static function get_rest_url() {
@@ -53,7 +52,6 @@ abstract class Base implements Route_Interface {
 		$rest_path = self::get_rest_path();
 
 		return get_rest_url( $blog_id, $rest_path );
-
 	}
 
 	public static function get_rest_args() {

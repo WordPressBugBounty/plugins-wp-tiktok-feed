@@ -8,9 +8,9 @@ namespace QuadLayers\TTF\Utils;
  * Date: 07/09/2022
  */
 
- /**
-  * Cache Class
-  */
+/**
+ * Cache Class
+ */
 class Cache {
 
 	private static $disable_cache_test            = false;
@@ -149,7 +149,6 @@ class Cache {
 		} else {
 			delete_option( $cache_option_key );
 		}
-
 	}
 
 	public function delete() {

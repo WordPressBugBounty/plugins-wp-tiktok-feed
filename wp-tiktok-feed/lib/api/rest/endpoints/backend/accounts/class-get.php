@@ -2,7 +2,7 @@
 namespace QuadLayers\TTF\Api\Rest\Endpoints\Backend\Accounts;
 
 use QuadLayers\TTF\Models\Accounts as Models_Account;
-use QuadLayers\TTF\Api\Rest\Endpoints\Base as Base;
+use QuadLayers\TTF\Api\Rest\Endpoints\Base;
 
 /**
  * API_Rest_Accounts_Get Class
@@ -43,7 +43,6 @@ class Get extends Base {
 			);
 			return $this->handle_response( $response );
 		}
-
 	}
 
 	public static function get_rest_args() {

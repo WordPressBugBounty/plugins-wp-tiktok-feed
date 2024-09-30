@@ -2,7 +2,7 @@
 namespace QuadLayers\TTF\Api\Rest\Endpoints\Backend\Accounts;
 
 use QuadLayers\TTF\Models\Accounts as Models_Account;
-use QuadLayers\TTF\Api\Rest\Endpoints\Base as Base;
+use QuadLayers\TTF\Api\Rest\Endpoints\Base;
 
 /**
  * API_Rest_Accounts_Create Class

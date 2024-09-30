@@ -17,37 +17,37 @@ class Feed extends CollectionEntity {
 	public $columns            = 3;
 	public $hide_carousel_feed = true;
 	public $lazy               = true;
-	public $profile            = [
+	public $profile            = array(
 		'display'   => false,
 		'username'  => '',
 		'nickname'  => '',
 		'biography' => '',
 		'link_text' => 'Follow',
 		'avatar'    => '',
-	];
-	public $video              = [
+	);
+	public $video              = array(
 		'spacing' => 10,
 		'radius'  => 0,
-	];
-	public $highlight          = [
+	);
+	public $highlight          = array(
 		'id'       => '',
 		'tag'      => '',
 		'position' => '1, 5, 7',
-	];
-	public $mask               = [
+	);
+	public $mask               = array(
 		'display'        => true,
 		'background'     => '#000000',
 		'likes_count'    => true,
 		'comments_count' => true,
-	];
-	public $box                = [
+	);
+	public $box                = array(
 		'display'    => false,
 		'padding'    => 1,
 		'radius'     => 0,
 		'background' => '#fefefe',
 		'text_color' => '#000000',
-	];
-	public $card               = [
+	);
+	public $card               = array(
 		'display'           => false,
 		'radius'            => 0,
 		'font_size'         => '12',
@@ -59,8 +59,8 @@ class Feed extends CollectionEntity {
 		'max_word_count'    => 10,
 		'video_description' => true,
 		'comments_count'    => true,
-	];
-	public $carousel           = [
+	);
+	public $carousel           = array(
 		'slidespv'          => 5,
 		'autoplay'          => false,
 		'autoplay_interval' => 3000,
@@ -72,8 +72,8 @@ class Feed extends CollectionEntity {
 		// 'infinite'          => true,
 		// 'adaptiveheight'    => false,
 		// 'rtl'               => false,
-	];
-	public $modal       = [
+	);
+	public $modal       = array(
 		'display'           => true,
 		'profile'           => true,
 		'download'          => false,
@@ -84,20 +84,20 @@ class Feed extends CollectionEntity {
 		'date'              => true,
 		'controls'          => true,
 		'align'             => 'right',
-	];
-	public $button      = [
+	);
+	public $button      = array(
 		'display'          => true,
 		'text'             => 'View on TikTok',
 		'text_color'       => '#ffff',
 		'background'       => '',
 		'background_hover' => '',
-	];
-	public $button_load = [
+	);
+	public $button_load = array(
 		'display'          => false,
 		'text_color'       => '#ffff',
 		'text'             => 'Load more...',
 		'background'       => '',
 		'background_hover' => '',
 		'profile'          => '',
-	];
+	);
 }

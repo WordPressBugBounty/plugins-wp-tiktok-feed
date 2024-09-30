@@ -2,7 +2,7 @@
 
 namespace QuadLayers\TTF\Api\Rest\Endpoints\Frontend\External_User_Profile;
 
-use QuadLayers\TTF\Api\Rest\Endpoints\Base as Base;
+use QuadLayers\TTF\Api\Rest\Endpoints\Base;
 
 /**
  * API_Fetch_External_User_Profile Class

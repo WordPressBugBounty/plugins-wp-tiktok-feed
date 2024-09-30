@@ -1,11 +1,11 @@
 <?php
 namespace QuadLayers\TTF\Api\Rest\Endpoints\Frontend\User_Video_List;
 
-use QuadLayers\TTF\Api\Rest\Endpoints\Base as Base;
+use QuadLayers\TTF\Api\Rest\Endpoints\Base;
 use QuadLayers\TTF\Models\Accounts as Models_Account;
 use QuadLayers\TTF\Models\Feeds as Models_Feed;
 use QuadLayers\TTF\Api\Fetch\User_Video_List\Get as API_Fetch_User_Video_List;
-use QuadLayers\TTF\Utils\Cache as Cache;
+use QuadLayers\TTF\Utils\Cache;
 
 
 /**
@@ -101,7 +101,7 @@ class Load extends Base {
 					if ( '' !== $item['cover_image_url'] && 0 !== $item['height'] && 0 !== $item['width'] && '' !== $item['embed_link'] ) {
 						$final_response[] = $item;
 					}
-				};
+				}
 
 				$response = $final_response;
 

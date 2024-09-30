@@ -2,7 +2,7 @@
 
 namespace QuadLayers\TTF\Api\Fetch\User_Video_List;
 
-use QuadLayers\TTF\Api\Fetch\Base as Base;
+use QuadLayers\TTF\Api\Fetch\Base;
 
 /**
  * API_Fetch_User_Video_List Class extends Base
@@ -57,7 +57,7 @@ class Get extends Base {
 				'title'             => $video['title'],
 				'video_description' => preg_replace_callback(
 					'/(?=#)(.*?)(?=\s)+/',
-					function( $tag ) {
+					function ( $tag ) {
 						$tag = str_replace( '#', '', $tag[1] );
 						return '<a target="_blank" href="' . QLTTF_TIKTOK_URL . '/tag/' . $tag . '">#' . $tag . '</a>';
 					},

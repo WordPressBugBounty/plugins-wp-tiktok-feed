@@ -1,7 +1,7 @@
 <?php
 namespace QuadLayers\TTF\Api\Rest\Endpoints\Frontend\Trending_Video_List;
 
-use QuadLayers\TTF\Api\Rest\Endpoints\Base as Base;
+use QuadLayers\TTF\Api\Rest\Endpoints\Base;
 
 /**
  * API_Rest_Frontend_Trending_Video_List Class

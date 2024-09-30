@@ -2,7 +2,7 @@
 namespace QuadLayers\TTF\Api\Rest\Endpoints\Backend\Feeds;
 
 use QuadLayers\TTF\Models\Feeds as Models_Feed;
-use QuadLayers\TTF\Api\Rest\Endpoints\Base as Base;
+use QuadLayers\TTF\Api\Rest\Endpoints\Base;
 
 /**
  * API_Rest_Feeds_Edit Class

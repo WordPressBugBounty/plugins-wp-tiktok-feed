@@ -2,7 +2,7 @@
 namespace QuadLayers\TTF\Api\Rest\Endpoints\Backend\Feeds;
 
 use QuadLayers\TTF\Models\Feeds as Models_Feed;
-use QuadLayers\TTF\Api\Rest\Endpoints\Base as Base;
+use QuadLayers\TTF\Api\Rest\Endpoints\Base;
 /**
  * API_Rest_Feeds_Get Class
  */
@@ -44,7 +44,7 @@ class Get extends Base {
 	public static function get_rest_args() {
 		return array(
 			'feed_id' => array(
-				'validate_callback' => function( $param, $request, $key ) {
+				'validate_callback' => function ( $param, $request, $key ) {
 					return is_numeric( $param );
 				},
 			),

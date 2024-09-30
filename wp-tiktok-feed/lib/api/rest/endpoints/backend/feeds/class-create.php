@@ -3,8 +3,8 @@
 namespace QuadLayers\TTF\Api\Rest\Endpoints\Backend\Feeds;
 
 use QuadLayers\TTF\Models\Feeds as Models_Feed;
-use QuadLayers\TTF\Api\Rest\Endpoints\Base as Base;
-use \WP_REST_Server;
+use QuadLayers\TTF\Api\Rest\Endpoints\Base;
+use WP_REST_Server;
 
 class Create extends Base {
 
@@ -36,7 +36,7 @@ class Create extends Base {
 	}
 
 	public static function get_rest_args() {
-		return [ 'feed' => [ 'required' => true ] ];
+		return array( 'feed' => array( 'required' => true ) );
 	}
 
 	public static function get_rest_method() {

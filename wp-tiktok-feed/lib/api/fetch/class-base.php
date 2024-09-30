@@ -96,5 +96,4 @@ abstract class Base implements Fetch_Interface {
 		}
 		return false;
 	}
-
 }

@@ -2,8 +2,8 @@
 namespace QuadLayers\TTF\Api\Rest\Endpoints\Backend\Accounts;
 
 use QuadLayers\TTF\Models\Accounts as Models_Account;
-use QuadLayers\TTF\Api\Rest\Endpoints\Base as Base;
-use QuadLayers\TTF\Utils\Cache as Cache;
+use QuadLayers\TTF\Api\Rest\Endpoints\Base;
+use QuadLayers\TTF\Utils\Cache;
 
 /**
  * API_Rest_Accounts_Delete Class

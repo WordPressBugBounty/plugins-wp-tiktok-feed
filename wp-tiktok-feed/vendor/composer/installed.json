@@ -7,12 +7,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Automattic/jetpack-assets.git",
-                "reference": "1f52b5c5c0ab330e466594da6b9752dc59f7f7fd"
+                "reference": "2650e76212c86c7c3001b239069ddb93710436f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Automattic/jetpack-assets/zipball/1f52b5c5c0ab330e466594da6b9752dc59f7f7fd",
-                "reference": "1f52b5c5c0ab330e466594da6b9752dc59f7f7fd",
+                "url": "https://api.github.com/repos/Automattic/jetpack-assets/zipball/2650e76212c86c7c3001b239069ddb93710436f0",
+                "reference": "2650e76212c86c7c3001b239069ddb93710436f0",
                 "shasum": ""
             },
             "require": {
@@ -28,7 +28,7 @@
             "suggest": {
                 "automattic/jetpack-autoloader": "Allow for better interoperability with other plugins that use this package."
             },
-            "time": "2024-09-06T20:58:13+00:00",
+            "time": "2024-09-10T12:47:30+00:00",
             "default-branch": true,
             "type": "jetpack-library",
             "extra": {
@@ -184,12 +184,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/franmastromarino/wp-options-orm.git",
-                "reference": "94ea51462e7c2a9790fc29f5c0293a03833388da"
+                "reference": "dfec8095b65a507e19ff377d976c596ba13e4f27"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/franmastromarino/wp-options-orm/zipball/94ea51462e7c2a9790fc29f5c0293a03833388da",
-                "reference": "94ea51462e7c2a9790fc29f5c0293a03833388da",
+                "url": "https://api.github.com/repos/franmastromarino/wp-options-orm/zipball/dfec8095b65a507e19ff377d976c596ba13e4f27",
+                "reference": "dfec8095b65a507e19ff377d976c596ba13e4f27",
                 "shasum": ""
             },
             "require": {
@@ -206,13 +206,13 @@
                 "squizlabs/php_codesniffer": "*",
                 "wp-coding-standards/wpcs": "^2.3.0"
             },
-            "time": "2024-02-09T18:33:02+00:00",
+            "time": "2024-09-18T14:23:52+00:00",
             "default-branch": true,
             "type": "library",
             "installation-source": "dist",
             "autoload": {
                 "files": [
-                    "src/helpers.php"
+                    "src/V2/helpers.php"
                 ],
                 "psr-4": {
                     "QuadLayers\\WP_Orm\\": "src/"
@@ -236,7 +236,7 @@
             ],
             "support": {
                 "issues": "https://github.com/franmastromarino/wp-options-orm/issues",
-                "source": "https://github.com/franmastromarino/wp-options-orm/tree/main"
+                "source": "https://github.com/franmastromarino/wp-options-orm/tree/dev1.2.0"
             },
             "install-path": "../franmastromarino/wp-orm"
         },

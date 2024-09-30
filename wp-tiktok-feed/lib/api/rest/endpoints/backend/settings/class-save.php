@@ -2,7 +2,7 @@
 namespace QuadLayers\TTF\Api\Rest\Endpoints\Backend\Settings;
 
 use QuadLayers\TTF\Models\Settings as Models_Settings;
-use QuadLayers\TTF\Api\Rest\Endpoints\Base as Base;
+use QuadLayers\TTF\Api\Rest\Endpoints\Base;
 
 /**
  * API_Rest_Setting_Save Class

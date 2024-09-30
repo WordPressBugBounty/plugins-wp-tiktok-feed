@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'quadlayers/wp-tiktok-feed',
-        'pretty_version' => 'v4.4.0',
-        'version' => '4.4.0.0',
-        'reference' => '684c88bbb9d7129553e847d6870ba9179d39e6be',
+        'pretty_version' => 'v4.4.1',
+        'version' => '4.4.1.0',
+        'reference' => '2fa5753aac0aeaffafd49a0a112731d02c45ba33',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'automattic/jetpack-assets' => array(
             'pretty_version' => 'dev-trunk',
             'version' => 'dev-trunk',
-            'reference' => '1f52b5c5c0ab330e466594da6b9752dc59f7f7fd',
+            'reference' => '2650e76212c86c7c3001b239069ddb93710436f0',
             'type' => 'jetpack-library',
             'install_path' => __DIR__ . '/../../jetpack_vendor/automattic/jetpack-assets',
             'aliases' => array(
@@ -46,7 +46,7 @@
         'franmastromarino/wp-orm' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '94ea51462e7c2a9790fc29f5c0293a03833388da',
+            'reference' => 'dfec8095b65a507e19ff377d976c596ba13e4f27',
             'type' => 'library',
             'install_path' => __DIR__ . '/../franmastromarino/wp-orm',
             'aliases' => array(
@@ -121,9 +121,9 @@
             'dev_requirement' => false,
         ),
         'quadlayers/wp-tiktok-feed' => array(
-            'pretty_version' => 'v4.4.0',
-            'version' => '4.4.0.0',
-            'reference' => '684c88bbb9d7129553e847d6870ba9179d39e6be',
+            'pretty_version' => 'v4.4.1',
+            'version' => '4.4.1.0',
+            'reference' => '2fa5753aac0aeaffafd49a0a112731d02c45ba33',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

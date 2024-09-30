@@ -2,7 +2,7 @@
 
 namespace QuadLayers\TTF\Api\Fetch\User_Profile;
 
-use QuadLayers\TTF\Api\Fetch\Base as Base;
+use QuadLayers\TTF\Api\Fetch\Base;
 
 /**
  * API_Fetch_User_Profile Class extends Base

@@ -2,10 +2,10 @@
 
 namespace QuadLayers\TTF\Controllers;
 
-use QuadLayers\TTF\Utils\Helpers as Helpers;
+use QuadLayers\TTF\Utils\Helpers;
 use QuadLayers\TTF\Models\Feeds as Models_Feed;
 use QuadLayers\TTF\Models\Accounts as Models_Account;
-use QuadLayers\TTF\Controllers\Frontend as Frontend;
+use QuadLayers\TTF\Controllers\Frontend;
 
 class Gutenberg {
 
@@ -46,13 +46,12 @@ class Gutenberg {
 			array(
 				'attributes'      => $this->get_attributes(),
 				'render_callback' => array( $this, 'render_callback' ),
-				'style'           => [ 'swiper', 'qlttf-frontend' ],
-				'script'          => [ 'swiper', 'masonry' ],
-				'editor_style'    => [ 'swiper', 'qlttf-frontend' ],
-				'editor_script'   => [ 'swiper', 'masonry' ],
+				'style'           => array( 'swiper', 'qlttf-frontend' ),
+				'script'          => array( 'swiper', 'masonry' ),
+				'editor_style'    => array( 'swiper', 'qlttf-frontend' ),
+				'editor_script'   => array( 'swiper', 'masonry' ),
 			)
 		);
-
 	}
 
 	public function render_callback( $feed, $content, $block = array() ) {

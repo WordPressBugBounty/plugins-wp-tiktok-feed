@@ -76,5 +76,4 @@ class Routes_Library {
 		}
 		return self::$instance;
 	}
-
 }

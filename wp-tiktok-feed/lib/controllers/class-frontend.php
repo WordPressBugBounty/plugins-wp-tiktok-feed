@@ -117,7 +117,6 @@ class Frontend {
 		$feed         = $models_feeds->get( $id );
 
 		return $this->create_shortcode( $feed, $id );
-
 	}
 
 	public static function instance() {
