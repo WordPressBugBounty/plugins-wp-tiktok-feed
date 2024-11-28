@@ -14,7 +14,7 @@ if ( class_exists( 'QuadLayers\\WP_Notice_Plugin_Promote\\Load' ) ) {
 	 */
 	define( 'QLTTF_PROMOTE_PREMIUM_SELL_SLUG', 'wp-tiktok-feed-pro' );
 	define( 'QLTTF_PROMOTE_PREMIUM_SELL_NAME', 'Tiktok Feed PRO' );
-	define( 'QLTTF_PROMOTE_PREMIUM_INSTALL_URL', 'https://quadlayers.com/product/tiktok-feed/?utm_source=qlttf_admin' );
+	define( 'QLTTF_PROMOTE_PREMIUM_INSTALL_URL', 'https://quadlayers.com/products/tiktok-feed/?utm_source=qlttf_admin' );
 	define( 'QLTTF_PROMOTE_PREMIUM_SELL_URL', QLTTF_PREMIUM_SELL_URL );
 	/**
 	 * Notice cross sell 1
@@ -30,7 +30,7 @@ if ( class_exists( 'QuadLayers\\WP_Notice_Plugin_Promote\\Load' ) ) {
 	define( 'QLTTF_PROMOTE_CROSS_INSTALL_2_SLUG', 'wp-whatsapp-chat' );
 	define( 'QLTTF_PROMOTE_CROSS_INSTALL_2_NAME', 'Social Chat' );
 	define( 'QLTTF_PROMOTE_CROSS_INSTALL_2_DESCRIPTION', esc_html__( 'Social Chat allows your users to start a conversation from your website directly to your WhatsApp phone number with one click.', 'wp-tiktok-feed' ) );
-	define( 'QLTTF_PROMOTE_CROSS_INSTALL_2_URL', 'https://quadlayers.com/product/whatsapp-chat/?utm_source=qlttf_admin' );
+	define( 'QLTTF_PROMOTE_CROSS_INSTALL_2_URL', 'https://quadlayers.com/products/whatsapp-chat/?utm_source=qlttf_admin' );
 	define( 'QLTTF_PROMOTE_CROSS_INSTALL_2_LOGO_SRC', plugins_url( '/assets/backend/img/wp-whatsapp-chat.jpeg', QLTTF_PLUGIN_FILE ) );
 
 	new \QuadLayers\WP_Notice_Plugin_Promote\Load(

@@ -5,7 +5,7 @@ Tags: tiktok, tiktok feed, tiktok video, tiktok widget, tiktok gallery
 Requires at least: 4.7
 Requires PHP: 5.6
 Tested up to: 6.7
-Stable tag: 4.4.3
+Stable tag: 4.4.4
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -103,7 +103,7 @@ There may be some other plugins(like: fancybox, elementor) which also uses image
 
 == Changelog ==
 
-= 4.4.3 =
+= 4.4.4 =
 * Fix: Update dependencies
 
 = 4.4.2 =
