@@ -38,21 +38,24 @@ abstract class Base implements Fetch_Interface {
 	 * @return array
 	 */
 	public function get_response( $args = null ) {
-		$url = $this->get_url();
+        $url = $this->get_url();
 
-		$response = wp_remote_post(
-			$url,
-			array(
-				'method'  => 'POST',
-				'timeout' => 45,
-				'body'    => json_encode( $args ),
-			)
-		);
+        $response = wp_remote_post(
+            $url,
+            array(
+                'method'  => 'POST',
+                'timeout' => 45,
+                'body'    => json_encode( $args ),
+                'headers' => array(
+                    'Content-Type' => 'application/json',
+                ),
+            )
+        );
 
-		$response = $this->handle_response( $response );
+        $response = $this->handle_response( $response );
 
-		return $response;
-	}
+        return $response;
+    }
 
 	/**
 	 * Function to handle query response.
