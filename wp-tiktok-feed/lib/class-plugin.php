@@ -12,7 +12,7 @@ final class Plugin {
 		/**
 		 * Load plugin textdomain.
 		 */
-		load_plugin_textdomain( 'wp-tiktok-feed', false, QLTTF_PLUGIN_DIR . '/languages/' );
+		add_action( 'init', array( $this, 'load_textdomain' ) );
 		/**
 		 * Load plugin classes.
 		 */
@@ -25,6 +25,10 @@ final class Plugin {
 		 */
 		do_action( 'qlttf_init' );
 		add_action( 'admin_notices', array( $this, 'add_new_api_notice' ) );
+	}
+
+	public function load_textdomain() {
+		load_plugin_textdomain( 'wp-tiktok-feed', false, QLTTF_PLUGIN_DIR . '/languages/' );
 	}
 
 	public function add_new_api_notice() {

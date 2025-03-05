@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'quadlayers/wp-tiktok-feed',
-        'pretty_version' => 'v4.4.6',
-        'version' => '4.4.6.0',
-        'reference' => '10aa62165ad59307ddbdf28603d1bb66a5e640c3',
+        'pretty_version' => 'v4.4.7',
+        'version' => '4.4.7.0',
+        'reference' => '09e954999ae9acc2b09b89bd659a9382e6741403',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'automattic/jetpack-assets' => array(
             'pretty_version' => 'dev-trunk',
             'version' => 'dev-trunk',
-            'reference' => '68d02cef7e6021d7f48a85ec38ab11d1ec8374f3',
+            'reference' => '1b732ee682fc4a163e3f194aeae6e3a7527fba74',
             'type' => 'jetpack-library',
             'install_path' => __DIR__ . '/../../jetpack_vendor/automattic/jetpack-assets',
             'aliases' => array(
@@ -24,7 +24,7 @@
         'automattic/jetpack-composer-plugin' => array(
             'pretty_version' => 'dev-trunk',
             'version' => 'dev-trunk',
-            'reference' => '6c46ffddb4fe590de79b1bbc3ae4b917924921e5',
+            'reference' => 'dd3d38cd19bb90ffd79162e5098a9b98095781e9',
             'type' => 'composer-plugin',
             'install_path' => __DIR__ . '/../automattic/jetpack-composer-plugin',
             'aliases' => array(
@@ -35,7 +35,7 @@
         'automattic/jetpack-constants' => array(
             'pretty_version' => 'dev-trunk',
             'version' => 'dev-trunk',
-            'reference' => '6617a5a7ea0768d4ef90743eb049c164341cf528',
+            'reference' => '6c269789e4f4d900f83bfd6a47215169abe4cbce',
             'type' => 'jetpack-library',
             'install_path' => __DIR__ . '/../../jetpack_vendor/automattic/jetpack-constants',
             'aliases' => array(
@@ -121,9 +121,9 @@
             'dev_requirement' => false,
         ),
         'quadlayers/wp-tiktok-feed' => array(
-            'pretty_version' => 'v4.4.6',
-            'version' => '4.4.6.0',
-            'reference' => '10aa62165ad59307ddbdf28603d1bb66a5e640c3',
+            'pretty_version' => 'v4.4.7',
+            'version' => '4.4.7.0',
+            'reference' => '09e954999ae9acc2b09b89bd659a9382e6741403',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
