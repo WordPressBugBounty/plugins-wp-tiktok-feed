@@ -4,8 +4,8 @@ Donate link: https://quadlayers.com/products/tiktok-feed/
 Tags: tiktok, tiktok feed, tiktok video, tiktok widget, tiktok gallery
 Requires at least: 4.7
 Requires PHP: 5.6
-Tested up to: 6.7
-Stable tag: 4.4.7
+Tested up to: 6.8
+Stable tag: 4.4.8
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -102,6 +102,9 @@ There may be some other plugins(like: fancybox, elementor) which also uses image
 6. Tik Tok Feed / Settings tab
 
 == Changelog ==
+
+= 4.4.8 =
+* WordPress compatibility
 
 = 4.4.7 =
 * Fix: textdomain error
