@@ -20,19 +20,12 @@ class Frontend {
 	protected static $instance;
 
 	private function __construct() {
-		add_action( 'wp_loaded', array( $this, 'register_assets' ) );
-		add_action( 'enqueue_block_editor_assets', array( $this, 'enqueue_assets' ) );
+		add_action( 'wp_enqueue_scripts', array( $this, 'register_scripts' ) );
+		add_action( 'admin_enqueue_scripts', array( $this, 'register_scripts' ) );
 		add_shortcode( 'tiktok-feed', array( $this, 'do_shortcode' ) );
 	}
 
-	function enqueue_assets() {
-		wp_enqueue_style( 'swiper' );
-		wp_enqueue_script( 'swiper' );
-		wp_enqueue_style( 'qlttf-frontend' );
-		wp_enqueue_script( 'qlttf-frontend' );
-	}
-
-	function register_assets() {
+	function register_scripts() {
 
 		$models_settings = new Models_Settings();
 

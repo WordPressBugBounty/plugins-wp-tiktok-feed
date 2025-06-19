@@ -5,7 +5,7 @@ Tags: tiktok, tiktok feed, tiktok video, tiktok widget, tiktok gallery
 Requires at least: 4.7
 Requires PHP: 5.6
 Tested up to: 6.8
-Stable tag: 4.5.0
+Stable tag: 4.5.1
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -102,6 +102,9 @@ There may be some other plugins(like: fancybox, elementor) which also uses image
 6. Tik Tok Feed / Settings tab
 
 == Changelog ==
+
+= 4.5.1 =
+* Fix: Load scripts only when its necessary
 
 = 4.5.0 =
 * Fix: update dependencies

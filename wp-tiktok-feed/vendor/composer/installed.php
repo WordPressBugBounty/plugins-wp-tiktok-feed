@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'quadlayers/wp-tiktok-feed',
-        'pretty_version' => 'v4.5.0',
-        'version' => '4.5.0.0',
-        'reference' => '7ca2d06d3297fdff00b851a8768bf3222e4b578e',
+        'pretty_version' => 'v4.5.1',
+        'version' => '4.5.1.0',
+        'reference' => '1a06e32f07ec0d4e49cfbe18784c7c30bd0d8f76',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'automattic/jetpack-assets' => array(
             'pretty_version' => 'dev-trunk',
             'version' => 'dev-trunk',
-            'reference' => '317bfcf3b79c1941633ee293473fb815ea15b662',
+            'reference' => '81d8e5d552236a5bd8b3f844fe6bf7503792df84',
             'type' => 'jetpack-library',
             'install_path' => __DIR__ . '/../../jetpack_vendor/automattic/jetpack-assets',
             'aliases' => array(
@@ -46,11 +46,11 @@
         'automattic/jetpack-status' => array(
             'pretty_version' => 'dev-trunk',
             'version' => 'dev-trunk',
-            'reference' => '6b9f972a3ac56bbb5dfce1990dfc4289bdaf2f9d',
+            'reference' => 'eed2d5802187707bafe98b1686ab90fabc9648b7',
             'type' => 'jetpack-library',
             'install_path' => __DIR__ . '/../../jetpack_vendor/automattic/jetpack-status',
             'aliases' => array(
-                0 => '5.1.x-dev',
+                0 => '5.2.x-dev',
             ),
             'dev_requirement' => false,
         ),
@@ -167,9 +167,9 @@
             'dev_requirement' => false,
         ),
         'quadlayers/wp-tiktok-feed' => array(
-            'pretty_version' => 'v4.5.0',
-            'version' => '4.5.0.0',
-            'reference' => '7ca2d06d3297fdff00b851a8768bf3222e4b578e',
+            'pretty_version' => 'v4.5.1',
+            'version' => '4.5.1.0',
+            'reference' => '1a06e32f07ec0d4e49cfbe18784c7c30bd0d8f76',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

@@ -13,15 +13,13 @@ class Gutenberg {
 	protected static $slug = QLTTF_DOMAIN . '_feeds';
 
 	private function __construct() {
-		add_action( 'wp_loaded', array( $this, 'register_assets' ) );
-		add_action( 'enqueue_block_editor_assets', array( $this, 'enqueue_assets' ) );
+		add_action( 'admin_enqueue_scripts', array( $this, 'register_assets' ) );
 		add_action( 'init', array( $this, 'register_block' ) );
 	}
 
 	public function register_assets() {
-		Frontend::instance()->register_assets();
+		Frontend::instance()->register_scripts();
 		$gutenberg = include QLTTF_PLUGIN_DIR . 'build/gutenberg/js/index.asset.php';
-		// wp_register_style( 'qlttf-gutenberg-style', plugins_url( '/build/gutenberg/css/style.css', QLTTF_PLUGIN_FILE ), array(), QLTTF_PLUGIN_VERSION );
 		wp_register_style( 'qlttf-gutenberg-editor', plugins_url( '/build/gutenberg/css/editor.css', QLTTF_PLUGIN_FILE ), array(), QLTTF_PLUGIN_VERSION );
 		wp_register_script( 'qlttf-gutenberg', plugins_url( '/build/gutenberg/js/index.js', QLTTF_PLUGIN_FILE ), $gutenberg['dependencies'], $gutenberg['version'], true );
 		wp_localize_script(
@@ -34,11 +32,6 @@ class Gutenberg {
 		);
 	}
 
-	public function enqueue_assets() {
-		wp_enqueue_style( 'qlttf-gutenberg-editor' );
-		wp_enqueue_script( 'qlttf-gutenberg' );
-	}
-
 	public function register_block() {
 
 		register_block_type(
@@ -46,10 +39,8 @@ class Gutenberg {
 			array(
 				'attributes'      => $this->get_attributes(),
 				'render_callback' => array( $this, 'render_callback' ),
-				'style'           => array( 'swiper', 'qlttf-frontend' ),
-				'script'          => array( 'swiper', 'masonry' ),
-				'editor_style'    => array( 'swiper', 'qlttf-frontend' ),
-				'editor_script'   => array( 'swiper', 'masonry' ),
+				'editor_script'   => array( 'qlttf-gutenberg', 'swiper', 'qlttf-frontend' ),
+				'editor_style'    => array( 'qlttf-gutenberg-editor', 'swiper', 'qlttf-frontend' ),
 			)
 		);
 	}
