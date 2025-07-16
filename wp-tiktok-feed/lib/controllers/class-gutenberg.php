@@ -33,14 +33,13 @@ class Gutenberg {
 	}
 
 	public function register_block() {
-
 		register_block_type(
 			'qlttf/box',
 			array(
 				'attributes'      => $this->get_attributes(),
 				'render_callback' => array( $this, 'render_callback' ),
-				'editor_script'   => array( 'qlttf-gutenberg', 'swiper', 'qlttf-frontend' ),
-				'editor_style'    => array( 'qlttf-gutenberg-editor', 'swiper', 'qlttf-frontend' ),
+				'editor_style'    => array( 'qlttf-swiper', 'qlttf-frontend', 'qlttf-gutenberg-editor' ),
+				'editor_script'   => array( 'qlttf-swiper', 'masonry', 'qlttf-frontend', 'qlttf-gutenberg' ),
 			)
 		);
 	}
@@ -53,20 +52,13 @@ class Gutenberg {
 	protected function get_attributes() {
 		$models_feeds = new Models_Feed();
 		$feed_arg     = $models_feeds->get_args();
+		$attributes   = array();
 
-		$attributes = array();
 		foreach ( $feed_arg as $id => $value ) {
 			$attributes[ $id ] = array(
 				'type'    => array( 'string', 'object', 'array', 'boolean', 'number', 'null' ),
 				'default' => $value,
 			);
-
-			if ( $id === 'username' ) {
-				$attributes[ $id ] = array(
-					'type'    => array( 'string', 'object', 'array', 'boolean', 'number', 'null' ),
-					'default' => (string) array_key_first( $this->get_name_accounts() ),
-				);
-			}
 		}
 
 		return $attributes;

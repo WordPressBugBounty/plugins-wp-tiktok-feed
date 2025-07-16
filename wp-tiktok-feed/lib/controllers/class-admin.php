@@ -23,7 +23,8 @@ class Admin {
 	private function __construct() {
 		add_action( 'admin_init', array( self::class, 'init_add_account' ) );
 		add_action( 'admin_menu', array( $this, 'add_menu' ) );
-		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
+		add_action( 'admin_enqueue_scripts', array( __CLASS__, 'register_scripts' ) );
+		add_action( 'admin_enqueue_scripts', array( __CLASS__, 'enqueue_scripts' ) );
 		add_action( 'admin_footer', array( __CLASS__, 'add_premium_css' ) );
 	}
 
@@ -87,11 +88,14 @@ class Admin {
 	}
 
 
-	function enqueue_scripts() {
+	public static function register_scripts() {
 
-		$store = include QLTTF_PLUGIN_DIR . 'build/store/js/index.asset.php';
+		global $wp_version;
 
-		wp_enqueue_script(
+		$store   = include QLTTF_PLUGIN_DIR . 'build/store/js/index.asset.php';
+		$backend = include_once QLTTF_PLUGIN_DIR . 'build/backend/js/index.asset.php';
+
+		wp_register_script(
 			'qlttf-store',
 			plugins_url( '/build/store/js/index.js', QLTTF_PLUGIN_FILE ),
 			$store['dependencies'],
@@ -115,8 +119,6 @@ class Admin {
 			)
 		);
 
-		global $wp_version;
-
 		wp_localize_script(
 			'qlttf-store',
 			'qlttf_store',
@@ -125,13 +127,7 @@ class Admin {
 			)
 		);
 
-		if ( ! isset( $_GET['page'] ) || $_GET['page'] !== self::get_menu_slug() ) {
-			return;
-		}
-
-		$backend = include_once QLTTF_PLUGIN_DIR . 'build/backend/js/index.asset.php';
-
-		wp_enqueue_style(
+		wp_register_style(
 			'qlttf-backend',
 			plugins_url( '/build/backend/css/style.css', QLTTF_PLUGIN_FILE ),
 			array(
@@ -144,7 +140,7 @@ class Admin {
 
 		wp_enqueue_media();
 
-		wp_enqueue_script(
+		wp_register_script(
 			'qlttf-backend',
 			plugins_url( '/build/backend/js/index.js', QLTTF_PLUGIN_FILE ),
 			$backend['dependencies'],
@@ -190,6 +186,26 @@ class Admin {
 				),
 			)
 		);
+	}
+
+	public static function enqueue_scripts() {
+
+		if ( ! isset( $_GET['page'] ) || $_GET['page'] !== self::get_menu_slug() ) {
+			return;
+		}
+		/**
+		 * Load admin scripts
+		 */
+		wp_enqueue_media();
+		wp_enqueue_style( 'qlttf-backend' );
+		wp_enqueue_script( 'qlttf-backend' );
+		/**
+		 * Load frontend scripts
+		 */
+		wp_enqueue_script( 'masonry' );
+		wp_enqueue_script( 'qlttf-swiper' );
+		wp_enqueue_style( 'qlttf-swiper' );
+		wp_enqueue_style( 'qlttf-frontend' );
 	}
 
 	public static function init_add_account() {

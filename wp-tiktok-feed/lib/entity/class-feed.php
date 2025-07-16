@@ -59,9 +59,10 @@ class Feed extends CollectionEntity {
 		'max_word_count'    => 10,
 		'video_description' => true,
 		'comments_count'    => true,
+		'text_align'        => 'left',
 	);
 	public $carousel           = array(
-		'slidespv'          => 5,
+		// 'slidespv'          => 5,
 		'autoplay'          => false,
 		'autoplay_interval' => 3000,
 		'navarrows'         => true,

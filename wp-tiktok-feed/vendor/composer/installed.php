@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'quadlayers/wp-tiktok-feed',
-        'pretty_version' => 'v4.5.1',
-        'version' => '4.5.1.0',
-        'reference' => '1a06e32f07ec0d4e49cfbe18784c7c30bd0d8f76',
+        'pretty_version' => 'v4.5.2',
+        'version' => '4.5.2.0',
+        'reference' => 'f8fba09ecd843a052db7690f3353ebe55cd2a209',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,11 +13,11 @@
         'automattic/jetpack-assets' => array(
             'pretty_version' => 'dev-trunk',
             'version' => 'dev-trunk',
-            'reference' => '81d8e5d552236a5bd8b3f844fe6bf7503792df84',
+            'reference' => '1664e826f492cc28fc299e94a9ea39e572e6bd8f',
             'type' => 'jetpack-library',
             'install_path' => __DIR__ . '/../../jetpack_vendor/automattic/jetpack-assets',
             'aliases' => array(
-                0 => '4.0.x-dev',
+                0 => '4.2.x-dev',
             ),
             'dev_requirement' => false,
         ),
@@ -46,11 +46,11 @@
         'automattic/jetpack-status' => array(
             'pretty_version' => 'dev-trunk',
             'version' => 'dev-trunk',
-            'reference' => 'eed2d5802187707bafe98b1686ab90fabc9648b7',
+            'reference' => '18f2a853f35e014c2d7afabc761f5bb53d2299fc',
             'type' => 'jetpack-library',
             'install_path' => __DIR__ . '/../../jetpack_vendor/automattic/jetpack-status',
             'aliases' => array(
-                0 => '5.2.x-dev',
+                0 => '5.4.x-dev',
             ),
             'dev_requirement' => false,
         ),
@@ -167,9 +167,9 @@
             'dev_requirement' => false,
         ),
         'quadlayers/wp-tiktok-feed' => array(
-            'pretty_version' => 'v4.5.1',
-            'version' => '4.5.1.0',
-            'reference' => '1a06e32f07ec0d4e49cfbe18784c7c30bd0d8f76',
+            'pretty_version' => 'v4.5.2',
+            'version' => '4.5.2.0',
+            'reference' => 'f8fba09ecd843a052db7690f3353ebe55cd2a209',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

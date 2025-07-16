@@ -36,8 +36,8 @@ class Frontend {
 		/**
 		 * Swiper
 		 */
-		wp_register_style( 'swiper', plugins_url( '/assets/frontend/swiper/swiper.min.css', QLTTF_PLUGIN_FILE ), null, QLTTF_PLUGIN_VERSION );
-		wp_register_script( 'swiper', plugins_url( '/assets/frontend/swiper/swiper.min.js', QLTTF_PLUGIN_FILE ), array( 'jquery' ), QLTTF_PLUGIN_VERSION, true );
+		wp_register_style( 'qlttf-swiper', plugins_url( '/assets/frontend/swiper/swiper.min.css', QLTTF_PLUGIN_FILE ), null, QLTTF_PLUGIN_VERSION );
+		wp_register_script( 'qlttf-swiper', plugins_url( '/assets/frontend/swiper/swiper.min.js', QLTTF_PLUGIN_FILE ), array( 'jquery' ), QLTTF_PLUGIN_VERSION, true );
 
 		/**
 		 * Tiktok
@@ -80,8 +80,8 @@ class Frontend {
 		}
 
 		if ( strpos( $feed_layout, 'carousel' ) !== false ) {
-			wp_enqueue_style( 'swiper' );
-			wp_enqueue_script( 'swiper' );
+			wp_enqueue_style( 'qlttf-swiper' );
+			wp_enqueue_script( 'qlttf-swiper' );
 		}
 
 		$id = isset( $id ) ? $id : $feed['id'];

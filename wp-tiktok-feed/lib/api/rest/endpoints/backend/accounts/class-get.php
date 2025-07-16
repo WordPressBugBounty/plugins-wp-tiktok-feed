@@ -15,7 +15,7 @@ class Get extends Base {
 		try {
 			$models_account = new Models_Account();
 
-			$open_id = trim( $request->get_param( 'open_id' ) );
+			$open_id = $request->get_param( 'open_id' ) ? trim( $request->get_param( 'open_id' ) ) : null;
 
 			if ( ! $open_id ) {
 
