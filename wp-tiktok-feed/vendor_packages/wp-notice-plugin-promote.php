@@ -16,15 +16,15 @@ if ( class_exists( 'QuadLayers\\WP_Notice_Plugin_Promote\\Load' ) ) {
 		 */
 		define( 'QLTTF_PROMOTE_PREMIUM_SELL_SLUG', 'wp-tiktok-feed-pro' );
 		define( 'QLTTF_PROMOTE_PREMIUM_SELL_NAME', 'Tiktok Feed PRO' );
-		define( 'QLTTF_PROMOTE_PREMIUM_INSTALL_URL', 'https://quadlayers.com/products/tiktok-feed/?utm_source=qlttf_admin' );
-		define( 'QLTTF_PROMOTE_PREMIUM_SELL_URL', QLTTF_PREMIUM_SELL_URL );
+		define( 'QLTTF_PROMOTE_PREMIUM_INSTALL_URL', 'https://quadlayers.com/products/tiktok-feed/?utm_source=qlttf_plugin&utm_medium=dashboard_notice&utm_campaign=premium_upgrade&utm_content=premium_install_button' );
+		define( 'QLTTF_PROMOTE_PREMIUM_SELL_URL', 'https://quadlayers.com/products/tiktok-feed/?utm_source=qlttf_plugin&utm_medium=dashboard_notice&utm_campaign=premium_upgrade&utm_content=premium_link' );
 		/**
 		 * Notice cross sell 1
 		 */
 		define( 'QLTTF_PROMOTE_CROSS_INSTALL_1_SLUG', 'ai-copilot' );
 		define( 'QLTTF_PROMOTE_CROSS_INSTALL_1_NAME', 'AI Copilot' );
 		define( 'QLTTF_PROMOTE_CROSS_INSTALL_1_DESCRIPTION', esc_html__( 'Boost your productivity in WordPress content creation with AI-driven tools, automated content generation, and enhanced editor utilities.', 'wp-tiktok-feed' ) );
-		define( 'QLTTF_PROMOTE_CROSS_INSTALL_1_URL', 'https://quadlayers.com/products/ai-copilot/?utm_source=qlttf_admin' );
+		define( 'QLTTF_PROMOTE_CROSS_INSTALL_1_URL', 'https://quadlayers.com/products/ai-copilot/?utm_source=qlttf_plugin&utm_medium=dashboard_notice&utm_campaign=cross_sell&utm_content=ai_copilot_link' );
 		define( 'QLTTF_PROMOTE_CROSS_INSTALL_1_LOGO_SRC', plugins_url( '/assets/backend/img/ai-copilot.png', QLTTF_PLUGIN_FILE ) );
 		/**
 		 * Notice cross sell 2
@@ -32,7 +32,7 @@ if ( class_exists( 'QuadLayers\\WP_Notice_Plugin_Promote\\Load' ) ) {
 		define( 'QLTTF_PROMOTE_CROSS_INSTALL_2_SLUG', 'wp-whatsapp-chat' );
 		define( 'QLTTF_PROMOTE_CROSS_INSTALL_2_NAME', 'Social Chat' );
 		define( 'QLTTF_PROMOTE_CROSS_INSTALL_2_DESCRIPTION', esc_html__( 'Social Chat allows your users to start a conversation from your website directly to your WhatsApp phone number with one click.', 'wp-tiktok-feed' ) );
-		define( 'QLTTF_PROMOTE_CROSS_INSTALL_2_URL', 'https://quadlayers.com/products/whatsapp-chat/?utm_source=qlttf_admin' );
+		define( 'QLTTF_PROMOTE_CROSS_INSTALL_2_URL', 'https://quadlayers.com/products/whatsapp-chat/?utm_source=qlttf_plugin&utm_medium=dashboard_notice&utm_campaign=cross_sell&utm_content=social_chat_link' );
 		define( 'QLTTF_PROMOTE_CROSS_INSTALL_2_LOGO_SRC', plugins_url( '/assets/backend/img/wp-whatsapp-chat.jpeg', QLTTF_PLUGIN_FILE ) );
 
 		new \QuadLayers\WP_Notice_Plugin_Promote\Load(
@@ -49,7 +49,7 @@ if ( class_exists( 'QuadLayers\\WP_Notice_Plugin_Promote\\Load' ) ) {
 									'<br>'
 					),
 					'notice_link'        => QLTTF_PROMOTE_REVIEW_URL,
-					'notice_more_link'   => QLTTF_SUPPORT_URL,
+					'notice_more_link'   => 'https://quadlayers.com/account/support/?utm_source=qlttf_plugin&utm_medium=dashboard_notice&utm_campaign=support&utm_content=report_bug_button',
 					'notice_more_label'  => esc_html__(
 						'Report a bug',
 						'wp-tiktok-feed'
