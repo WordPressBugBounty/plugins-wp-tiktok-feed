@@ -82,7 +82,13 @@ class Load extends Base {
 			$response = $fetch_user_video_list->get_data( $args );
 			// Check if response is an error and return it.
 			if ( isset( $response['message'] ) && isset( $response['code'] ) ) {
-				throw new \Exception( $response['message'], $response['code'] );
+				$error_code = is_numeric( $response['code'] ) ? (int) $response['code'] : 0;
+				throw new \Exception( $response['message'], $error_code );
+			}
+
+			// Extract videos array from V2 response format
+			if ( isset( $response['videos'] ) ) {
+				$response = $response['videos'];
 			}
 
 			if ( ! isset( $feed['hide_carousel_feed'] ) ) {

@@ -7,17 +7,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Automattic/jetpack-assets.git",
-                "reference": "679c94d3d8d3efffb6eb2ac525c693e9c699b109"
+                "reference": "f545752d25a6d07b34b9687665700beb2f6bc39d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Automattic/jetpack-assets/zipball/679c94d3d8d3efffb6eb2ac525c693e9c699b109",
-                "reference": "679c94d3d8d3efffb6eb2ac525c693e9c699b109",
+                "url": "https://api.github.com/repos/Automattic/jetpack-assets/zipball/f545752d25a6d07b34b9687665700beb2f6bc39d",
+                "reference": "f545752d25a6d07b34b9687665700beb2f6bc39d",
                 "shasum": ""
             },
             "require": {
                 "automattic/jetpack-constants": "^3.0.8",
-                "automattic/jetpack-status": "^6.0.3",
+                "automattic/jetpack-status": "^6.0.4",
                 "php": ">=7.2"
             },
             "require-dev": {
@@ -30,7 +30,7 @@
             "suggest": {
                 "automattic/jetpack-autoloader": "Allow for better interoperability with other plugins that use this package."
             },
-            "time": "2025-08-18T16:28:42+00:00",
+            "time": "2025-09-08T19:09:58+00:00",
             "default-branch": true,
             "type": "jetpack-library",
             "extra": {
@@ -188,12 +188,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Automattic/jetpack-status.git",
-                "reference": "34c1e382e1d0a45e15df6e9e831c0e1e9ce78de8"
+                "reference": "8d02db626419fab955d240cf5898b7ad36077ae8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Automattic/jetpack-status/zipball/34c1e382e1d0a45e15df6e9e831c0e1e9ce78de8",
-                "reference": "34c1e382e1d0a45e15df6e9e831c0e1e9ce78de8",
+                "url": "https://api.github.com/repos/Automattic/jetpack-status/zipball/8d02db626419fab955d240cf5898b7ad36077ae8",
+                "reference": "8d02db626419fab955d240cf5898b7ad36077ae8",
                 "shasum": ""
             },
             "require": {
@@ -203,7 +203,7 @@
             "require-dev": {
                 "automattic/jetpack-changelogger": "^6.0.6",
                 "automattic/jetpack-connection": "@dev",
-                "automattic/jetpack-ip": "^0.4.9",
+                "automattic/jetpack-ip": "^0.4.10",
                 "automattic/jetpack-plans": "@dev",
                 "automattic/phpunit-select-config": "^1.0.3",
                 "brain/monkey": "^2.6.2",
@@ -212,7 +212,7 @@
             "suggest": {
                 "automattic/jetpack-autoloader": "Allow for better interoperability with other plugins that use this package."
             },
-            "time": "2025-08-14T14:16:58+00:00",
+            "time": "2025-09-08T19:09:29+00:00",
             "default-branch": true,
             "type": "jetpack-library",
             "extra": {
