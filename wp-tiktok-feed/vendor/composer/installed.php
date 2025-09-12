@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'quadlayers/wp-tiktok-feed',
-        'pretty_version' => 'v4.5.6',
-        'version' => '4.5.6.0',
-        'reference' => 'e4847478ad6aaf4695becb6242130ed88bcafd60',
+        'pretty_version' => 'v4.5.7',
+        'version' => '4.5.7.0',
+        'reference' => '9f96f0894f1e5e42d83716ff0e64040bd125bd18',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -167,9 +167,9 @@
             'dev_requirement' => false,
         ),
         'quadlayers/wp-tiktok-feed' => array(
-            'pretty_version' => 'v4.5.6',
-            'version' => '4.5.6.0',
-            'reference' => 'e4847478ad6aaf4695becb6242130ed88bcafd60',
+            'pretty_version' => 'v4.5.7',
+            'version' => '4.5.7.0',
+            'reference' => '9f96f0894f1e5e42d83716ff0e64040bd125bd18',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
