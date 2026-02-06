@@ -1,7 +1,7 @@
 <?php
 namespace QuadLayers\TTF\Api\Rest\Endpoints\Frontend\User_Profile;
 
-use QuadLayers\TTF\Api\Rest\Endpoints\Base;
+use QuadLayers\TTF\Api\Rest\Endpoints\Frontend\Base;
 use QuadLayers\TTF\Models\Accounts as Models_Account;
 use QuadLayers\TTF\Api\Fetch\User_Profile\Get as API_Fetch_User_Profile;
 use QuadLayers\TTF\Utils\Cache;
@@ -109,8 +109,5 @@ class Load extends Base {
 	 */
 	public static function get_rest_method() {
 		return \WP_REST_Server::CREATABLE;
-	}
-	public function get_rest_permission() {
-		return true;
 	}
 }

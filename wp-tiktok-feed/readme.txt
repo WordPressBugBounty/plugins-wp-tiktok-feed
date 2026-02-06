@@ -4,8 +4,8 @@ Donate link: https://quadlayers.com/products/tiktok-feed/
 Tags: tiktok, tiktok feed, tiktok video, tiktok widget, tiktok gallery
 Requires at least: 4.7
 Requires PHP: 5.6
-Tested up to: 6.8
-Stable tag: 4.5.7
+Tested up to: 6.9
+Stable tag: 4.6.5
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -102,6 +102,30 @@ There may be some other plugins(like: fancybox, elementor) which also uses image
 6. Tik Tok Feed / Settings tab
 
 == Changelog ==
+
+= 4.6.5 =
+* Security: Fix broken access control vulnerability (CVE-2025-63016) in frontend REST API endpoints
+
+= 4.6.4 =
+* Fix: Undefined sprintf
+
+= 4.6.3 =
+* WordPress compatibility
+
+= 4.6.2 =
+* Fix: Premium compatibility
+
+= 4.6.1 =
+* Fix: WP Rocket compatibility
+
+= 4.6.0 =
+* Fix: authorization vulnerability in frontend REST API endpoints
+
+= 4.5.9 =
+* Fix: Premium compatibility
+
+= 4.5.8 =
+* Fix: php 7.2 errors
 
 = 4.5.7 =
 * Fix: Feed avatar heic image support

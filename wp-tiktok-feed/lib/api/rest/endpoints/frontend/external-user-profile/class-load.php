@@ -2,7 +2,7 @@
 
 namespace QuadLayers\TTF\Api\Rest\Endpoints\Frontend\External_User_Profile;
 
-use QuadLayers\TTF\Api\Rest\Endpoints\Base;
+use QuadLayers\TTF\Api\Rest\Endpoints\Frontend\Base;
 
 /**
  * API_Fetch_External_User_Profile Class
@@ -30,9 +30,5 @@ class Load extends Base {
 
 	public static function get_rest_method() {
 		return \WP_REST_Server::CREATABLE;
-	}
-
-	public function get_rest_permission() {
-		return true;
 	}
 }

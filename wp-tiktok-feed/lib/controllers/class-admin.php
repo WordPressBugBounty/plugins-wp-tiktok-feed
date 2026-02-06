@@ -25,7 +25,7 @@ class Admin {
 		add_action( 'admin_menu', array( $this, 'add_menu' ) );
 		add_action( 'admin_enqueue_scripts', array( __CLASS__, 'register_scripts' ) );
 		add_action( 'admin_enqueue_scripts', array( __CLASS__, 'enqueue_scripts' ) );
-		add_action( 'admin_footer', array( __CLASS__, 'add_premium_css' ) );
+		add_action( 'admin_footer', array( __CLASS__, 'add_premium_style' ) );
 	}
 
 	public static function get_menu_slug() {
@@ -251,7 +251,7 @@ class Admin {
 		}
 	}
 
-	public static function add_premium_css() {
+	public static function add_premium_style() {
 		?>
 			<style>
 				.qlttf-premium-field {

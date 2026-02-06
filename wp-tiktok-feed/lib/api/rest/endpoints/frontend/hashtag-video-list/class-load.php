@@ -1,7 +1,7 @@
 <?php
 namespace QuadLayers\TTF\Api\Rest\Endpoints\Frontend\Hashtag_Video_List;
 
-use QuadLayers\TTF\Api\Rest\Endpoints\Base;
+use QuadLayers\TTF\Api\Rest\Endpoints\Frontend\Base;
 
 /**
  * API_Rest_Frontend_Hashtag_Video_List Class
@@ -30,9 +30,5 @@ class Load extends Base {
 
 	public static function get_rest_method() {
 		return \WP_REST_Server::CREATABLE;
-	}
-
-	public function get_rest_permission() {
-		return true;
 	}
 }
