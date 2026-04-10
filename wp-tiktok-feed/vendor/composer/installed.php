@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'quadlayers/wp-tiktok-feed',
-        'pretty_version' => 'v4.6.5',
-        'version' => '4.6.5.0',
-        'reference' => 'ed96f3764713dc3ec4c62694aa2c1147f4b78cb5',
+        'pretty_version' => 'v4.6.6',
+        'version' => '4.6.6.0',
+        'reference' => 'd1170fc5903089e76d3582388cdde17c83e61617',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         'automattic/jetpack-assets' => array(
-            'pretty_version' => 'v4.3.19',
-            'version' => '4.3.19.0',
-            'reference' => '8ea6849ac53ca145f9196cb1e9a27c1a4a442330',
+            'pretty_version' => 'v4.3.32',
+            'version' => '4.3.32.0',
+            'reference' => 'e78fdf43e5de4ab80d183c3c36bd40eb8fc46a28',
             'type' => 'jetpack-library',
             'install_path' => __DIR__ . '/../../jetpack_vendor/automattic/jetpack-assets',
             'aliases' => array(),
@@ -121,9 +121,9 @@
             'dev_requirement' => false,
         ),
         'quadlayers/wp-tiktok-feed' => array(
-            'pretty_version' => 'v4.6.5',
-            'version' => '4.6.5.0',
-            'reference' => 'ed96f3764713dc3ec4c62694aa2c1147f4b78cb5',
+            'pretty_version' => 'v4.6.6',
+            'version' => '4.6.6.0',
+            'reference' => 'd1170fc5903089e76d3582388cdde17c83e61617',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
