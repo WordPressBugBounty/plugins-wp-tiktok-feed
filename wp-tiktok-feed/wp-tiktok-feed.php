@@ -4,7 +4,7 @@
  * Plugin Name:             TikTok Feed
  * Plugin URI:              https://quadlayers.com/products/tiktok-feed/
  * Description:             Display beautiful and responsive galleries on your website from your TikTok feed account.
- * Version:                 4.6.8
+ * Version:                 4.6.9
  * Text Domain:             wp-tiktok-feed
  * Author:                  QuadLayers
  * Author URI:              https://quadlayers.com
@@ -13,6 +13,8 @@
  * Request at least:        4.7
  * Tested up to:            7.1
  * Requires PHP:            5.6
+ * WC requires at least:    4.0
+ * WC tested up to:         11.1
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -20,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 define( 'QLTTF_PLUGIN_NAME', 'TikTok Feed' );
-define( 'QLTTF_PLUGIN_VERSION', '4.6.8' );
+define( 'QLTTF_PLUGIN_VERSION', '4.6.9' );
 define( 'QLTTF_PLUGIN_FILE', __FILE__ );
 define( 'QLTTF_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
 define( 'QLTTF_PLUGIN_DIR', __DIR__ . DIRECTORY_SEPARATOR );
@@ -60,5 +62,17 @@ register_activation_hook(
 	QLTTF_PLUGIN_FILE,
 	function () {
 		do_action( QLTTF_PREFIX . '_activation' );
+	}
+);
+
+/**
+ * Declarate compatibility with WooCommerce Custom Order Tables
+ */
+add_action(
+	'before_woocommerce_init',
+	function () {
+		if ( class_exists( '\Automattic\WooCommerce\Utilities\FeaturesUtil' ) ) {
+			\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', __FILE__, true );
+		}
 	}
 );

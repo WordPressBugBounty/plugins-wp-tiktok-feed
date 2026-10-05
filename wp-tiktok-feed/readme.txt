@@ -5,9 +5,11 @@ Tags: tiktok, tiktok feed, tiktok video, tiktok widget, tiktok gallery
 Requires at least: 4.7
 Requires PHP: 5.6
 Tested up to: 7.1
-Stable tag: 4.6.8
+Stable tag: 4.6.9
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
+WC requires at least: 4.0
+WC tested up to: 11.1
 
 Display beautiful and responsive galleries on your website from your TikTok feed account.
 
@@ -102,6 +104,10 @@ There may be some other plugins(like: fancybox, elementor) which also uses image
 6. Tik Tok Feed / Settings tab
 
 == Changelog ==
+
+= 4.6.9 =
+* WooCommerce 11.1 compatibility
+* fix: declare WooCommerce HPOS compatibility
 
 = 4.6.8 =
 * fix: WordPress compatibility
