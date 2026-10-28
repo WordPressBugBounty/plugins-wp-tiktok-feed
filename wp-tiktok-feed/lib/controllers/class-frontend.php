@@ -27,6 +27,10 @@ class Frontend {
 
 	function register_scripts() {
 
+		if ( wp_script_is( 'qlttf-frontend', 'registered' ) ) {
+			return;
+		}
+
 		$models_settings = new Models_Settings();
 
 		$settings = $models_settings->get();

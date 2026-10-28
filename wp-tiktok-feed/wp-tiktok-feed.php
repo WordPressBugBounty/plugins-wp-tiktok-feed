@@ -4,7 +4,7 @@
  * Plugin Name:             TikTok Feed
  * Plugin URI:              https://quadlayers.com/products/tiktok-feed/
  * Description:             Display beautiful and responsive galleries on your website from your TikTok feed account.
- * Version:                 4.6.9
+ * Version:                 4.7.0
  * Text Domain:             wp-tiktok-feed
  * Author:                  QuadLayers
  * Author URI:              https://quadlayers.com
@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 define( 'QLTTF_PLUGIN_NAME', 'TikTok Feed' );
-define( 'QLTTF_PLUGIN_VERSION', '4.6.9' );
+define( 'QLTTF_PLUGIN_VERSION', '4.7.0' );
 define( 'QLTTF_PLUGIN_FILE', __FILE__ );
 define( 'QLTTF_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
 define( 'QLTTF_PLUGIN_DIR', __DIR__ . DIRECTORY_SEPARATOR );

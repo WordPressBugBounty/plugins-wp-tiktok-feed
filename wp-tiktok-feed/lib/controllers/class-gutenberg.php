@@ -13,11 +13,16 @@ class Gutenberg {
 	protected static $slug = QLTTF_DOMAIN . '_feeds';
 
 	private function __construct() {
-		add_action( 'admin_enqueue_scripts', array( $this, 'register_assets' ) );
+		// Register on init so the handles exist when the block editor iframe assets are collected.
+		add_action( 'init', array( $this, 'register_assets' ) );
 		add_action( 'init', array( $this, 'register_block' ) );
+		add_action( 'enqueue_block_assets', array( $this, 'enqueue_editor_canvas_assets' ) );
 	}
 
 	public function register_assets() {
+		if ( ! is_admin() || wp_doing_ajax() ) {
+			return;
+		}
 		Frontend::instance()->register_scripts();
 		$gutenberg = include QLTTF_PLUGIN_DIR . 'build/gutenberg/js/index.asset.php';
 		wp_register_style( 'qlttf-gutenberg-editor', plugins_url( '/build/gutenberg/css/editor.css', QLTTF_PLUGIN_FILE ), array(), QLTTF_PLUGIN_VERSION );
@@ -30,6 +35,16 @@ class Gutenberg {
 				'access_token_link' => Helpers::get_access_token_link(),
 			)
 		);
+	}
+
+	/**
+	 * Load Masonry inside the block editor iframe, the layout looks it up in the iframe window.
+	 */
+	public function enqueue_editor_canvas_assets() {
+		if ( ! is_admin() ) {
+			return;
+		}
+		wp_enqueue_script( 'masonry' );
 	}
 
 	public function register_block() {
