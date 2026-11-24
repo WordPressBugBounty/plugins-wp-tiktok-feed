@@ -1,0 +1,1257 @@
+# Copyright (C) 2026 QuadLayers
+# This file is distributed under the GPLv3.
+msgid ""
+msgstr ""
+"Project-Id-Version: TikTok Feed 4.7.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-tiktok-feed\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-11-24T16:08:55+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: wp-tiktok-feed\n"
+
+#. Plugin Name of the plugin
+#: wp-tiktok-feed.php:4
+msgid "TikTok Feed"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: wp-tiktok-feed.php:5
+msgid "https://quadlayers.com/products/tiktok-feed/"
+msgstr ""
+
+#. Description of the plugin
+#: wp-tiktok-feed.php:6
+msgid "Display beautiful and responsive galleries on your website from your TikTok feed account."
+msgstr ""
+
+#. Author of the plugin
+#: wp-tiktok-feed.php:9
+msgid "QuadLayers"
+msgstr ""
+
+#. Author URI of the plugin
+#: wp-tiktok-feed.php:10
+msgid "https://quadlayers.com"
+msgstr ""
+
+#: lib/api/fetch/class-base.php:74
+msgid "Response is not valid json."
+msgstr ""
+
+#: lib/api/fetch/class-base.php:93
+#: lib/api/rest/endpoints/backend/settings/class-save.php:30
+msgid "Unknown error."
+msgstr ""
+
+#: lib/api/fetch/user-video-list/class-get.php:87
+msgid "The current feed has no videos."
+msgstr ""
+
+#: lib/api/rest/endpoints/backend/accounts/class-create.php:20
+msgid "refresh_token not set."
+msgstr ""
+
+#: lib/api/rest/endpoints/backend/accounts/class-delete.php:27
+msgid "Can't delete account; open_id not found."
+msgstr ""
+
+#: lib/api/rest/endpoints/backend/accounts/class-get.php:34
+#, php-format
+msgid "Account %s not found"
+msgstr ""
+
+#: lib/api/rest/endpoints/backend/feeds/class-clear-cache.php:21
+#: lib/api/rest/endpoints/frontend/user-profile/class-load.php:34
+#: lib/api/rest/endpoints/frontend/user-profile/class-load.php:38
+#: lib/api/rest/endpoints/frontend/user-video-list/class-load.php:27
+msgid "Bad Request, feed settings not found."
+msgstr ""
+
+#: lib/api/rest/endpoints/backend/feeds/class-clear-cache.php:33
+#: lib/api/rest/endpoints/backend/feeds/class-delete.php:37
+msgid "Feed source not found."
+msgstr ""
+
+#: lib/api/rest/endpoints/backend/feeds/class-clear-cache.php:39
+#: lib/api/rest/endpoints/backend/feeds/class-delete.php:49
+msgid "Feed username not found."
+msgstr ""
+
+#: lib/api/rest/endpoints/backend/feeds/class-create.php:18
+#: lib/api/rest/endpoints/backend/feeds/class-edit.php:20
+msgid "Feed notset."
+msgstr ""
+
+#: lib/api/rest/endpoints/backend/feeds/class-create.php:24
+msgid "Unknown error"
+msgstr ""
+
+#: lib/api/rest/endpoints/backend/feeds/class-delete.php:21
+msgid "Feed id not found."
+msgstr ""
+
+#: lib/api/rest/endpoints/backend/feeds/class-delete.php:29
+msgid "Can't delete feed, feed_id not found"
+msgstr ""
+
+#: lib/api/rest/endpoints/backend/feeds/class-edit.php:30
+msgid "Feed cannot be updated"
+msgstr ""
+
+#: lib/api/rest/endpoints/backend/feeds/class-get.php:30
+#, php-format
+msgid "Feed %s not found"
+msgstr ""
+
+#: lib/api/rest/endpoints/backend/settings/class-save.php:22
+msgid "Settings not saved."
+msgstr ""
+
+#: lib/api/rest/endpoints/frontend/external-user-profile/class-load.php:17
+#: lib/api/rest/endpoints/frontend/external-user-video-list/class-load.php:17
+msgid "Username is a premium feature."
+msgstr ""
+
+#: lib/api/rest/endpoints/frontend/hashtag-video-list/class-load.php:17
+msgid "Hashtag is a premium feature."
+msgstr ""
+
+#: lib/api/rest/endpoints/frontend/trending-video-list/class-load.php:17
+msgid "Trending is a premium feature."
+msgstr ""
+
+#: lib/api/rest/endpoints/frontend/user-profile/class-load.php:57
+#: lib/api/rest/endpoints/frontend/user-video-list/class-load.php:63
+#, php-format
+msgid "Account id %s not found"
+msgstr ""
+
+#: lib/api/rest/endpoints/frontend/user-video-list/class-load.php:55
+msgid "Feed open_id not found."
+msgstr ""
+
+#: lib/api/rest/endpoints/frontend/user-video-list/class-load.php:69
+msgid "Feed limit not found."
+msgstr ""
+
+#: lib/api/rest/endpoints/frontend/user-video-list/class-load.php:95
+msgid "Feed hide carousel feed not found."
+msgstr ""
+
+#: lib/class-plugin.php:57
+#: lib/controllers/class-admin.php:55
+#: lib/controllers/class-admin.php:56
+#: build/backend/js/index.js:46
+msgid "Accounts"
+msgstr ""
+
+#: lib/class-plugin.php:63
+#: lib/controllers/class-admin.php:63
+#: lib/controllers/class-admin.php:64
+#: build/backend/js/index.js:46
+msgid "Feeds"
+msgstr ""
+
+#: lib/class-plugin.php:70
+msgid "TikTok Feed update: NEW TIKTOK API V2!"
+msgstr ""
+
+#: lib/class-plugin.php:74
+msgid "TikTok has changed it's API and now it requires a new login to get the new API token. This is a mandatory change and it will affect all TikTok Feed users."
+msgstr ""
+
+#: lib/class-plugin.php:77
+msgid "Please follow the following instructions to update your feeds correctly:"
+msgstr ""
+
+#: lib/class-plugin.php:81
+#, php-format
+msgid "Go to TikTok Feed %s page and delete the previously mentioned accounts."
+msgstr ""
+
+#: lib/class-plugin.php:84
+#, php-format
+msgid "Go to TikTok Feed %s page and click on \"Edit\" to the corresponding feeds, then select in Account field the new correct account and save it."
+msgstr ""
+
+#: lib/controllers/class-admin.php:47
+#: lib/controllers/class-admin.php:48
+#: build/backend/js/index.js:46
+msgid "Welcome"
+msgstr ""
+
+#: lib/controllers/class-admin.php:71
+#: lib/controllers/class-admin.php:72
+#: vendor_packages/wp-plugin-table-links.php:9
+#: build/backend/js/index.js:46
+msgid "Settings"
+msgstr ""
+
+#: lib/controllers/class-admin.php:79
+#: lib/controllers/class-admin.php:82
+#: vendor_packages/wp-plugin-table-links.php:14
+#: build/backend/js/index.js:46
+msgid "Premium"
+msgstr ""
+
+#: vendor_packages/wp-notice-plugin-promote.php:31
+msgid "Turn more visitors into customers."
+msgstr ""
+
+#: vendor_packages/wp-notice-plugin-promote.php:40
+msgid "Social Chat allows your users to start a conversation from your website directly to your WhatsApp phone number with one click."
+msgstr ""
+
+#: vendor_packages/wp-notice-plugin-promote.php:53
+msgid "Display Instagram feeds beautifully."
+msgstr ""
+
+#: vendor_packages/wp-notice-plugin-promote.php:62
+msgid "Display Instagram photos from any account with responsive galleries, custom layouts, and an engaging lightbox popup."
+msgstr ""
+
+#: vendor_packages/wp-notice-plugin-promote.php:76
+msgid "Enjoying TikTok Feed?"
+msgstr ""
+
+#: vendor_packages/wp-notice-plugin-promote.php:84
+msgid "A quick 5-star review helps us keep improving the plugin and supporting users like you. It only takes 2 seconds — thank you!"
+msgstr ""
+
+#: vendor_packages/wp-notice-plugin-promote.php:87
+msgid "Report a bug"
+msgstr ""
+
+#: vendor_packages/wp-notice-plugin-promote.php:95
+#: build/backend/js/index.js:46
+msgid "Purchase Now"
+msgstr ""
+
+#: vendor_packages/wp-notice-plugin-promote.php:104
+msgid "Save 20% today!"
+msgstr ""
+
+#: vendor_packages/wp-notice-plugin-promote.php:113
+#, php-format
+msgid "Today we have a special gift for you. Use the coupon code %1$s within the next 48 hours to receive a %2$s discount on the premium version of the %3$s plugin."
+msgstr ""
+
+#: vendor_packages/wp-plugin-table-links.php:21
+#: build/backend/js/index.js:46
+msgid "Support"
+msgstr ""
+
+#: vendor_packages/wp-plugin-table-links.php:26
+#: build/backend/js/index.js:46
+msgid "Documentation"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#, js-format
+msgid "Thanks for using %s! We are doing our best to offer you the best alternatives to display TikTok videos on your site, helping you to improve communication experience with your users."
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Demo"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#, js-format
+msgid "Hi! We are Quadlayers, we are expanding our products portfolio, according to social trends!  So… enjoy our first version of %s. We are developing new features"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#, js-format
+msgid "Thank you for choosing our %s plugin for WordPress! Here you can see our demo and test the features we offer in the premium version."
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "View demo"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#, js-format
+msgid "If you have any doubt or you find any issue don't hesitate to contact us through our ticket system or join our community to meet other %s users."
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Submit ticket"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Comunnity"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#, js-format
+msgid "If you want to get in touch with other %s users or be aware of our promotional discounts join our community now."
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Join our community"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Loading…"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Refresh token copied to clipboard."
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Can't copy the refresh token."
+msgstr ""
+
+#: build/backend/js/index.js:46
+#, js-format
+msgid "You are about to delete the %s account."
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Add TikTok Account"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Button not working?"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Multiple user accounts are only allowed in the premium version."
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Image"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Username"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Open Id"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Refresh Token"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Expires"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Action"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Close dialog"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Manually connect an account"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Refresh Token:"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Enter a valid refresh token"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Get access token"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Please copy and paste your refresh access token here."
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Save"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "General"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Profile"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Carousel"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Box"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Video"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Card"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Modal"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Button"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Button Load More"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Close"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Edit previous media item"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Edit next media item"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#, js-format
+msgid "Edit feed # %s"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "New"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Source"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Account"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "(This is a premium feature)"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Hashtag"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Trending"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Username, Hashtag & Trending feeds are available in the premium version."
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Please enter a hashtag"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Please enter a username"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Region"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Please enter a region country in Alpha-2 standard. You can find more information about it here."
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Select an account"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Please select a TikTok account"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "(Premium)"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Carousel items"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Hide carousel feed items. This option is must be checked until TikTok API can support carousel feed items."
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Limit"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Number of videos to display"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Columns"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Number of videos in a row"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Highlight by tag"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Highlight feed items with these tags"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Highlight by id"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Highlight feed items with these ids"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Highlight by position"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Highlight feed items with these positions"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Spacing"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Add spacing between videos"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Display the TikTok Feed inside a customizable box"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Padding"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Add padding to the box"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Radius"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Add radius to the box"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Background"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Change background color in box"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Text color"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Change text color in box"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Autoplay"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Autoplay carousel items"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Autoplay Interval"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Moves carousel after a certain amount of time"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Navigation"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Display navigation arrows"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Navigation color"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Change navigation arrows color"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Pagination"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Display pagination dots"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Pagination color"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Change pagination dots color"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Lazy load"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Defers video lazy"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Mask"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Display mask on hover"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Mask background"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Change background color in mask"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Likes"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Display likes count in mask"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Comments"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Display comments count in mask"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Display"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Display card in video"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Add radius to the card"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Font size"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Change font size in cards"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Change background color in cards"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Background hover"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Change background color hover in cards"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Change text color"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Add padding in cards"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Display likes count in cards"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Display comments count in cards"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Description"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Display description in cards"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Length"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Limit the length of the description in the card"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Display Modal by clicking on video"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Display user profile or tag info"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Display description in the sidebar"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Display likes count in sidebar"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Display comments count in sidebar"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Date"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Display video date"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Due to Tiktok limitations, controls and autoplay options are not available in account source."
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Controls"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Display video controls"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Video autoplay when modal is open."
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Text align"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Left"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Center"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Right"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Align description in sidebar"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Display the button to open tikTok site link"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Text"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Change button text"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Change color text in button"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Change background color in button"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Change background hover in button"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Display the button to load more feeds"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Select"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Select logo"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Remove"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Change"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Select image"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Nickname"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Profile nickname"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Profile username"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Link Text"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Link text here"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Biography"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Profile description here"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Feed"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "+ Feed"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Go to the Accounts tab and create your access token."
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Name"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Layout"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Shortcode"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Actions"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Feed shortcode copied to clipboard."
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Edit feed"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Edit"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Clear feed cache"
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "You are about to reset the cache of this feed."
+msgstr ""
+
+#: build/backend/js/index.js:46
+#: build/gutenberg/js/index.js:2
+msgid "Cache"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Delete feed"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "You are about to delele this feed."
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Unlock the power of our premium TikTok Feed plugin which allows you to choose between six beautiful layouts and tone of customizing options."
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Download videos"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Include a download button inside the video pop up that allows your users to download TikTok feed videos directly from your site."
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Customize Videos display"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Customize the colors of the TikTok Feed including custom background, text, buttons background and mouseover effects, Videos padding, and a rounded border. It also includes the user or tag profile info in the header of the box."
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Card and box Videos display"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "TikTok Feed allows to display videos on a customized box. Or display videos into cards with video data in it.ed including custom background, text, buttons background and mouseover effects, Videos padding, and a rounded border."
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Load more button"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Allow your users to load more videos in the gallery providing an improved user experience."
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Video cards"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Wrap TikTok feed videos inside a box and display descriptions."
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Our premium version allows you to include a beautiful card around the video where you can display the number of comments, likes, and video descriptions."
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Layouts"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Unlock the power of the carousel and highlight layouts that allows you to display the TikTok Feeds in a grid that supports items of variable size."
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Boxed layout"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "This option wraps the feed gallery inside a box where you can include the profile user info, tag info or displayed trend data."
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Carousel layout"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "The carousel layout displays multiple videos inside an animated carousel with pagination and navigation controls. Including two alternative size for corousel: square and vertical options."
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Highlight layout"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "The highlight layout is a grid that allows you to stand out some videos with two or three columns width size. Allowing highlight by tag, position or video id."
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Remove data"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Check this box to remove all data related to this plugin on uninstall."
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Replace loader"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Reset Spinner"
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Select an image from media library to replace the default loader icon."
+msgstr ""
+
+#: build/backend/js/index.js:46
+msgid "Suggestions"
+msgstr ""
+
+#: build/gutenberg/js/index.js:2
+msgid "Clear cache"
+msgstr ""
+
+#: build/gutenberg/js/index.js:2
+msgid "Please select an account"
+msgstr ""
+
+#: build/gutenberg/js/index.js:2
+msgid "Please enter a tiktok account name"
+msgstr ""
+
+#: build/gutenberg/js/index.js:2
+msgid " highlight by tag"
+msgstr ""
+
+#: build/gutenberg/js/index.js:2
+msgid "Highlight feeds items with this tags"
+msgstr ""
+
+#: build/gutenberg/js/index.js:2
+msgid " highlight by id"
+msgstr ""
+
+#: build/gutenberg/js/index.js:2
+msgid " highlight by position"
+msgstr ""
+
+#: build/gutenberg/js/index.js:2
+msgid "Highlight feeds items in this positions"
+msgstr ""
+
+#: build/gutenberg/js/index.js:2
+msgid "Move to the next picture after a specified time interval"
+msgstr ""
+
+#: build/gutenberg/js/index.js:2
+msgid "Profile Nickname"
+msgstr ""
+
+#: build/gutenberg/js/index.js:2
+msgid "Upload"
+msgstr ""
+
+#: build/gutenberg/js/index.js:2
+msgid "Button load more"
+msgstr ""
+
+#: build/gutenberg/js/index.js:2
+msgid "Please create access token"
+msgstr ""
+
+#: build/gutenberg/js/index.js:2
+msgid "Before you start creating feeds, you have to create an access token. Please go to the account tab to connect your Instagram account and then reload this page."
+msgstr ""
+
+#: build/gutenberg/js/index.js:2
+msgid "Add Account"
+msgstr ""
+
+#: build/gutenberg/js/index.js:2
+msgid "Add Personal Account"
+msgstr ""
+
+#: build/gutenberg/js/index.js:2
+msgid "Please select account"
+msgstr ""
+
+#: build/gutenberg/js/index.js:2
+msgid "Before you start creating feeds, you have to select your Instagram account."
+msgstr ""
+
+#: build/gutenberg/js/index.js:2
+msgid "Tiktok Feed"
+msgstr ""
+
+#: build/gutenberg/js/index.js:2
+msgid "Display beautiful and responsive galleries on your website from your Tiktok feed account."
+msgstr ""
+
+#: build/gutenberg/js/index.js:2
+msgid "qltff"
+msgstr ""
+
+#: build/gutenberg/js/index.js:2
+msgid "instagram"
+msgstr ""
+
+#: build/gutenberg/js/index.js:2
+msgid "quadlayers"
+msgstr ""
+
+#: build/store/js/index.js:1
+msgid "The created instance does not contain a valid store."
+msgstr ""
+
+#: build/store/js/index.js:1
+msgid "The account has been created successfully."
+msgstr ""
+
+#: build/store/js/index.js:1
+#, js-format
+msgid "The account %s has been deleted."
+msgstr ""
+
+#: build/store/js/index.js:1
+msgid "The feed has been created successfully."
+msgstr ""
+
+#: build/store/js/index.js:1
+#, js-format
+msgid "The feed %s has been deleted."
+msgstr ""
+
+#: build/store/js/index.js:1
+msgid "The feed has been updated successfully."
+msgstr ""
+
+#: build/store/js/index.js:1
+msgid "Settings saved."
+msgstr ""
